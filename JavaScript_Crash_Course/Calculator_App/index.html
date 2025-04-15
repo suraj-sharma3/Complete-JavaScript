@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- This line tells the web browser how to read the text on the page—specifically, which character encoding to use. 
+    UTF-8 is a very popular and flexible character encoding that supports almost all characters from all languages, including English, Hindi, Arabic, emojis 😄, symbols (©, €, ®), and more.
+    If you don’t include this line, special characters might show up as weird symbols (like �) or not display correctly.
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <!-- This line helps make your website responsive, meaning it looks good on all screen sizes — like phones, tablets, and computers.
+    - name="viewport": This targets the viewport, which is the visible area of a web page on a screen.
+    - content="width=device-width": This sets the page width to match the width of the user's device (like a mobile phone or laptop).
+    - initial-scale=1.0: This sets the initial zoom level to 100% (i.e., no zoom in or out when the page loads).
+    -->
+    <title>My First Calculator</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+
+    <div class="container">
+      <h1>Online Calculator</h1>
+      <input type="number" id="firstNumber" placeholder="First number" />
+      <select id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+      </select>
+      <input type="number" id="secondNumber" placeholder="Second number" />
+      <button id="calculate">Calculate</button>
+      <p id="result">Result will be displayed here</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
